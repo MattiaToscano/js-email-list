@@ -11,6 +11,10 @@ for (let i = 0; i < items; i++) {
     axios.get(endpoint).then((response) => {
         const mailArray = response.data.response;
         console.log(mailArray);
+        // Creiamo un elemento <li> per ogni email e lo aggiungiamo alla lista
+        const lista = document.createElement('li');
+        lista.innerHTML = mailArray;
+        emailList.append(lista);
     })}
 
 
