@@ -32,7 +32,7 @@ button.addEventListener('click', function() {
                 
                 emailsLoaded++;
             })
-                      
+        console.clear();
 }    }   )                 
  
 
